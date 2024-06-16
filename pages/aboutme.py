@@ -77,7 +77,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-color: black;
+        background-color: #FFF6E9;
         padding: 2em;
     }
     h1, h2 {
