@@ -30,7 +30,7 @@ with st.expander("Image Classification of Different Sports"):
     """, unsafe_allow_html=True)
 
 st.header('🔍Prediction')
-st.image("./pict/predict.png")
+st.image("./my_pict/predict.png")
 
 
 with st.expander("🌦️ Weather Predictor 🌦️"):
