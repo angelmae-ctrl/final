@@ -77,15 +77,15 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-color: white;
+        background-color: black;
         padding: 2em;
     }
     h1, h2 {
-        color: black;
+        color: white;
     }
     .stText {
         font-size: 1.5em;
-        color: black;
+        color: white;
     }
     </style>
     """,
