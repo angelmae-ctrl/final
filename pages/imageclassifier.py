@@ -1,20 +1,24 @@
-import joblib
+import pickle
 import streamlit as st
 import pandas as pd
+import pickle
 from nltk.corpus import names
 from PIL import Image
 from io import BytesIO
 from img2vec_pytorch import Img2Vec
+import streamlit as st
 from sklearn.exceptions import NotFittedError
 from sklearn.utils.validation import check_is_fitted
 
 # Set Streamlit page configuration
 st.set_page_config(layout="wide", page_title="⚽️ 🏀 🏈 ⚾️ 🎾Image Classification for Sports 🏐 🏉 🎱🏐")
 
+
 # Function to load the model
 def load_model():
     try:
-        model = joblib.load('./pages/sports.p')
+        with open('pages/sports.p', 'rb') as f:
+            model = pickle.load(f)
         return model
     except FileNotFoundError:
         st.error("Model file not found. Please upload the model file.")
@@ -36,6 +40,7 @@ model = load_model()
 
 # Initialize Img2Vec
 img2vec = Img2Vec()
+
 
 # Streamlit Web App Interface
 st.write("## 🏐 IMAGE CLASSIFICATION OF SPORTS 🏐")
