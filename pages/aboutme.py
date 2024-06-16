@@ -81,11 +81,11 @@ st.markdown(
         padding: 2em;
     }
     h1, h2 {
-        color: white;
+        color: black;
     }
     .stText {
         font-size: 1.5em;
-        color: white;
+        color: black;
     }
     </style>
     """,
