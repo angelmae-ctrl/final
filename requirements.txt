@@ -2,4 +2,4 @@
 scikit-learn
 st-pages
 nltk
-
+joblib
